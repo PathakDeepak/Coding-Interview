@@ -3,7 +3,7 @@ package Arrays;
 /**
  * @author valar_morghulis on 08/02/23.
  * @project Coding-Interview
- * @description
+ * @description Maximum and minimum of an array using minimum number of comparisons.
  */
 public class MinMaxInArray {
 

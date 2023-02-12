@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author valar_morghulis on 08/02/23.
  * @project Coding-Interview
- * @description
+ * @description Write a program to reverse an array or string
  */
 public class ReserveArray {
 

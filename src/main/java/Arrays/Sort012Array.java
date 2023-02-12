@@ -3,7 +3,7 @@ package Arrays;
 /**
  * @author valar_morghulis on 11/02/23.
  * @project Coding-Interview
- * @description
+ * @description Given an array of size N containing only 0s, 1s, and 2s; sort the array in ascending order.
  */
 public class Sort012Array {
 
