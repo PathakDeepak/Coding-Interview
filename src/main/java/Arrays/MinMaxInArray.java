@@ -8,7 +8,7 @@ package Arrays;
 public class MinMaxInArray {
 
     public static void main(String[] args) {
-        int[] arr = new int[]{22, 14, 8, 17, 35, 3};
+        int[] arr = new int[]{5,4,3,2,1};
         Values values = new Values();
         minMax(arr,values);
         System.out.println("min value: " + values.getMin());
@@ -34,6 +34,11 @@ public class MinMaxInArray {
         if (arr.length > 2){
             int min = arr[0];
             int max = arr[1];
+            if(min>max){
+                min = min+max;
+                max = min-max;
+                min = min-max;
+            }
             for (int i = 2; i < arr.length; i++){
                 if (arr[i] < min)
                     min = arr[i];
