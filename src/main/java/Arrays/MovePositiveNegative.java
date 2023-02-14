@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class MovePositiveNegative {
 
     public static void main(String[] args) {
-        int[] arr = new int[] {-12, 11, -13, -5, 6, -7, 5, -3, -6};
+        int[] arr = new int[] {1, -1, 0,8,5,-3,-2,6};
         int[] result = move(arr);
         Arrays.stream(result).forEach(a -> System.out.print(a + " " ));
     }
@@ -23,8 +23,8 @@ public class MovePositiveNegative {
             if (arr[left] < 0 && arr[right] < 0)
                 left++;
             else if (arr[left] > 0 && arr[right] > 0) {
-                right++;
-            } else if (arr[left] > 0 && arr[right] < 0) {
+                right--;
+            } else if (arr[left] >= 0 && arr[right] < 0) {
                 int temp = arr[left];
                 arr[left] = arr[right];
                 arr[right] = temp;
